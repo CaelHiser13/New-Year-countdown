@@ -1,3 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Year Countdown</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="countdown">
+    <h1>New Year Countdown</h1>
+    <p id="timer"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.countdown {
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+#timer {
+  font-size: 3em;
+  color: #333;
+}
 function getTimeRemaining(endTime) {
   const total = Date.parse(endTime) - Date.parse(new Date());
   const seconds = Math.floor((total / 1000) % 60);
@@ -28,4 +63,4 @@ function initializeClock(id, endTime) {
 }
 
 const deadline = '2024-01-01T00:00:00'; // Change this to the desired New Year's date
-initializeClock('timer', 2024-01-01T00:00:00);
+initializeClock('timer', deadline);
